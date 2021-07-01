@@ -1,4 +1,9 @@
--- Configuración del servidor, los valores se sugieren estar en 0 (Off) 
+----------------------------------------------------------------------------------------------------------
+-- Author         : Hidequel Puga
+-- Date           : 2021-07-01
+-- Description    : Hardening - How to check SQL Server System Configuration
+----------------------------------------------------------------------------------------------------------
+
 SELECT CONVERT(VARCHAR(50), SERVERPROPERTY('ServerName')) AS ServerName
 	 , [name] AS [ConfigName]
 	 , CASE [value] WHEN 1 THEN 'ON'
