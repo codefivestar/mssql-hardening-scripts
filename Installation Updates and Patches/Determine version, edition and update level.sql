@@ -3,9 +3,11 @@
 -- Date           : 2021-07-01
 -- Description    : Hardening - Determine version, edition and update level
 ----------------------------------------------------------------------------------------------------------
+USE [master]
+GO
 
 -- Code # 1: 
-SELECT CONVERT(VARCHAR(70), @@VERSION) AS [Version];
+SELECT CONVERT(VARCHAR(300), @@VERSION) AS [Version];
 
 -- Code # 2:
 SELECT SERVERPROPERTY('ServerName')             AS ServerName

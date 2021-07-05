@@ -3,7 +3,8 @@
 -- Date           : 2021-07-01
 -- Description    : Hardening - How to check SQL Server Authentication Mode
 ----------------------------------------------------------------------------------------------------------
-
+USE [master]
+GO
 
 -- code snippet # 1
 
