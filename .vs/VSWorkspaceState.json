@@ -3,8 +3,9 @@
     "",
     "\\Authentication and Authorization",
     "\\Installation Updates and Patches",
+    "\\Policies and Passwords",
     "\\Reduction of the Attack Surface"
   ],
-  "SelectedNode": "\\Authentication and Authorization\\How to check Orphaned user.sql",
+  "SelectedNode": "\\Reduction of the Attack Surface\\How to check HideInstance database engine.sql",
   "PreviewInSolutionExplorer": false
 }
