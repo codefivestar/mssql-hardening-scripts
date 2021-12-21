@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Audits and Logs",
     "\\Authentication and Authorization",
     "\\Installation Updates and Patches",
     "\\Policies and Passwords",
     "\\Reduction of the Attack Surface"
   ],
-  "SelectedNode": "\\Reduction of the Attack Surface\\How to check HideInstance database engine.sql",
+  "SelectedNode": "\\Reduction of the Attack Surface\\How to check System Configuration.sql",
   "PreviewInSolutionExplorer": false
 }
