@@ -30,3 +30,26 @@ DECLARE @portNumber NVARCHAR(10);
    FROM sys.dm_exec_connections
   WHERE session_id = @@SPID
  GO
+
+ -- Script # 3 : Determine if Network Protocols is enabled
+ SELECT 'Named Pipes' AS [Protocol]
+     , iif(value_data = 1, 'Yes', 'No') AS isEnabled
+  FROM sys.dm_server_registry
+ WHERE registry_key LIKE '%np' 
+   AND value_name = 'Enabled'
+
+UNION
+
+SELECT 'Shared Memory'
+     , iif(value_data = 1, 'Yes', 'No')
+  FROM sys.dm_server_registry
+ WHERE registry_key LIKE '%sm' 
+   AND value_name = 'Enabled'
+
+UNION
+
+SELECT 'TCP/IP'
+     , iif(value_data = 1, 'Yes', 'No')
+  FROM sys.dm_server_registry
+ WHERE registry_key LIKE '%tcp' 
+   AND value_name = 'Enabled'
