@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------------------
 --Autor          : Hidequel Puga
 --Fecha          : 2021-07-07
---Descripción    : Hardening - Retrieve Configured value for Audit Level
+--DescripciÃ³n    : Hardening - Retrieve Configured value for Audit Level
 ----------------------------------------------------------------------------------------------------------
 
 DECLARE @AuditLevel INT;

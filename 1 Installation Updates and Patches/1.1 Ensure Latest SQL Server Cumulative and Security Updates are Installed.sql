@@ -6,13 +6,15 @@
 USE [master]
 GO
 
--- Code # 1: 
-SELECT CONVERT(VARCHAR(300), @@VERSION) AS [Version];
+-- Audit :
 
--- Code # 2:
 SELECT SERVERPROPERTY('ServerName')             AS ServerName
      , SERVERPROPERTY('ProductVersion')         AS ProductVersion
 	 , SERVERPROPERTY('ProductLevel')           AS ProductLevel
 	 , SERVERPROPERTY('Edition')                AS [Edition]
 	 , SERVERPROPERTY('ProductUpdateLevel')     AS ProductUpdateLevel
 	 , SERVERPROPERTY('ProductUpdateReference') AS ProductUpdateReference;
+
+-- Remediation : 
+
+-- https://docs.microsoft.com/en-us/sql/database-engine/install-windows/latest-updates-for-microsoft-sql-server?view=sql-server-ver15

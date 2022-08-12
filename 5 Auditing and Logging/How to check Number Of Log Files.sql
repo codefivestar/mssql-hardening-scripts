@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------------------
 --Autor          : Hidequel Puga
 --Fecha          : 2021-07-07
---Descripción    : Hardening - Retrieve Configured value SQL Error Log
+--DescripciÃ³n    : Hardening - Retrieve Configured value SQL Error Log
 ----------------------------------------------------------------------------------------------------------
 
 USE [master]
